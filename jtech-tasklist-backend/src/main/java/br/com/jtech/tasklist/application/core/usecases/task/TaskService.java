@@ -30,8 +30,22 @@ public class TaskService {
     @Transactional
     public TaskResponse createTask(CreateTaskRequest request, String userId) {
         // Validate tasklist ownership
-        tasklistRepository.findByIdAndUserId(request.getTasklistId(), userId)
-                .orElseThrow(() -> new IllegalArgumentException("Tasklist not found or access denied"));
+        System.out.println("🔍 Creating task - tasklistId: " + request.getTasklistId());
+        System.out.println("🔍 Creating task - userId: " + userId);
+        
+        var tasklist = tasklistRepository.findByIdAndUserId(request.getTasklistId(), userId);
+        System.out.println("🔍 Tasklist found: " + tasklist.isPresent());
+        
+        if (tasklist.isEmpty()) {
+            // Debug: check if tasklist exists at all
+            var anyTasklist = tasklistRepository.findById(request.getTasklistId());
+            System.out.println("🔍 Tasklist exists in DB: " + anyTasklist.isPresent());
+            if (anyTasklist.isPresent()) {
+                System.out.println("🔍 Tasklist userId in DB: " + anyTasklist.get().getUserId());
+            }
+        }
+        
+        tasklist.orElseThrow(() -> new IllegalArgumentException("Tasklist not found or access denied"));
 
         var task = TaskEntity.builder()
                 .id(UUID.randomUUID().toString())

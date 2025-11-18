@@ -7,6 +7,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
+import { AuthService } from '../../../core/services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -19,7 +22,9 @@ import { MatIconModule } from '@angular/material/icon';
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatProgressSpinnerModule,
+    MatSnackBarModule
   ],
     templateUrl: './login.component.html',
   styles: [`
@@ -78,10 +83,13 @@ import { MatIconModule } from '@angular/material/icon';
 export class LoginComponent {
   loginForm: FormGroup;
   hidePassword = true;
+  isLoading = false;
 
   constructor(
     private fb: FormBuilder,
-    private router: Router
+    private router: Router,
+    private authService: AuthService,
+    private snackBar: MatSnackBar
   ) {
     this.loginForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
@@ -99,9 +107,35 @@ export class LoginComponent {
 
   onSubmit(): void {
     if (this.loginForm.valid) {
+      this.isLoading = true;
       console.log('Login attempt:', this.loginForm.value);
-      // TODO: Implement authentication service
-      this.router.navigate(['/dashboard']);
+      
+      this.authService.login(this.loginForm.value).subscribe({
+        next: (response) => {
+          console.log('Login successful:', response);
+          this.snackBar.open('Login realizado com sucesso!', 'Fechar', {
+            duration: 3000,
+            horizontalPosition: 'end',
+            verticalPosition: 'top',
+            panelClass: ['success-snackbar']
+          });
+          this.router.navigate(['/dashboard']);
+        },
+        error: (error) => {
+          console.error('Login error:', error);
+          this.isLoading = false;
+          const errorMessage = error.error?.message || 'Email ou senha inválidos';
+          this.snackBar.open(errorMessage, 'Fechar', {
+            duration: 5000,
+            horizontalPosition: 'end',
+            verticalPosition: 'top',
+            panelClass: ['error-snackbar']
+          });
+        },
+        complete: () => {
+          this.isLoading = false;
+        }
+      });
     }
   }
 }

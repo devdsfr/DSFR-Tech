@@ -3,6 +3,7 @@ package br.com.jtech.tasklist.adapters.input.controllers;
 import br.com.jtech.tasklist.adapters.input.protocols.task.CreateTaskRequest;
 import br.com.jtech.tasklist.adapters.input.protocols.task.TaskResponse;
 import br.com.jtech.tasklist.adapters.input.protocols.task.UpdateTaskRequest;
+import br.com.jtech.tasklist.adapters.output.repositories.UserRepository;
 import br.com.jtech.tasklist.application.core.usecases.task.TaskService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
@@ -29,6 +30,7 @@ import java.util.List;
 public class TaskController {
 
     private final TaskService taskService;
+    private final UserRepository userRepository;
 
     @PostMapping
     @Operation(summary = "Create a new task")
@@ -85,8 +87,11 @@ public class TaskController {
     }
 
     private String getUserIdFromAuth(Authentication authentication) {
-        // The email is stored in the authentication principal
-        // We need to fetch the user ID from the repository
-        return authentication.getName();
+        // The email is stored in the authentication principal (JWT subject)
+        // We need to fetch the user UUID from the repository
+        String email = authentication.getName();
+        return userRepository.findByEmail(email)
+                .orElseThrow(() -> new IllegalArgumentException("User not found"))
+                .getId();
     }
 }

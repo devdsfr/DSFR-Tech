@@ -1,17 +1,38 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+# ============================================
 # Compiled output
+# ============================================
 /dist
 /tmp
 /out-tsc
 /bazel-out
+*.js
+*.js.map
+*.d.ts
+*.d.ts.map
+!karma.conf.js
+!protractor.conf.js
 
+# ============================================
 # Node
+# ============================================
 /node_modules
 npm-debug.log
 yarn-error.log
+pnpm-debug.log
 
+# ============================================
+# Package manager lock files
+# ============================================
+# Uncomment if you want to ignore lock files
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ============================================
 # IDEs and editors
+# ============================================
 .idea/
 .project
 .classpath
@@ -19,38 +40,55 @@ yarn-error.log
 *.launch
 .settings/
 *.sublime-workspace
-
-# Visual Studio Code
+*.sublime-project
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
 .history/*
+*.swp
+*.swo
+*~
 
-# Miscellaneous
+# ============================================
+# Angular
+# ============================================
+/.angular/
 /.angular/cache
 .sass-cache/
 /connect.lock
-/coverage
 /libpeerconnection.log
 testem.log
 /typings
 
-# System files
-.DS_Store
-Thumbs.db
+# ============================================
+# Testing
+# ============================================
+/coverage
+/.nyc_output
+*.lcov
+.karma/
 
+# ============================================
+# e2e
+# ============================================
+/e2e/*.js
+/e2e/*.map
+
+# ============================================
 # Environment files
+# ============================================
 .env
 .env.local
 .env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# Build files
-*.js.map
-*.d.ts.map
-
+# ============================================
 # Logs
+# ============================================
 logs
 *.log
 npm-debug.log*
@@ -59,18 +97,41 @@ yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
 
-# Testing
-/coverage
-/.nyc_output
+# ============================================
+# System files
+# ============================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
 
-# e2e
-/e2e/*.js
-/e2e/*.map
+# ============================================
+# Temporary files
+# ============================================
+*.tmp
+*.temp
+*.bak
+*.cache
 
-# Angular cache
-.angular/
+# ============================================
+# Build artifacts
+# ============================================
+*.tgz
+*.gz
+*.zip
+*.tar
 
-# Package manager lock files (optional - uncomment if needed)
-# package-lock.json
-# yarn.lock
-# pnpm-lock.yaml
+# ============================================
+# Documentation
+# ============================================
+# Uncomment if you want to ignore generated docs
+# /docs
+# /documentation
+
+# ============================================
+# Miscellaneous
+# ============================================
+.sass-cache
+.stylelintcache
+.eslintcache
+.prettiercache

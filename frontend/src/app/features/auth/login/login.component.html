@@ -9,10 +9,10 @@
           <mat-label>Email</mat-label>
           <input matInput type="email" formControlName="email" placeholder="seu@email.com">
           <mat-icon matPrefix>email</mat-icon>
-          @if (email?.hasError('required') && email?.touched) {
+          @if (email.hasError('required') && email.touched) {
             <mat-error>Email é obrigatório</mat-error>
           }
-          @if (email?.hasError('email') && email?.touched) {
+          @if (email.hasError('email') && email.touched) {
             <mat-error>Email inválido</mat-error>
           }
         </mat-form-field>
@@ -24,10 +24,10 @@
           <button mat-icon-button matSuffix type="button" (click)="hidePassword = !hidePassword">
             <mat-icon>{{hidePassword ? 'visibility_off' : 'visibility'}}</mat-icon>
           </button>
-          @if (password?.hasError('required') && password?.touched) {
+          @if (password.hasError('required') && password.touched) {
             <mat-error>Senha é obrigatória</mat-error>
           }
-          @if (password?.hasError('minlength') && password?.touched) {
+          @if (password.hasError('minlength') && password.touched) {
             <mat-error>Senha deve ter no mínimo 6 caracteres</mat-error>
           }
         </mat-form-field>

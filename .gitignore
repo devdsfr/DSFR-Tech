@@ -1,31 +1,108 @@
 # Root .gitignore for fullstack project
 
+# ============================================
 # OS files
+# ============================================
 .DS_Store
 Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
 *.swp
 *.swo
 *~
 
+# ============================================
 # IDE
+# ============================================
 .vscode/
 .idea/
 *.iml
+*.iws
+*.ipr
+.project
+.classpath
+.settings/
+*.sublime-workspace
+*.sublime-project
 
+# ============================================
+# Node / Frontend
+# ============================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+.angular/
+.sass-cache/
+dist/
+*.js.map
+*.d.ts.map
+
+# ============================================
+# Java / Backend
+# ============================================
+.gradle/
+build/
+target/
+out/
+bin/
+*.class
+*.jar
+*.war
+*.ear
+
+# ============================================
 # Logs
+# ============================================
 *.log
 logs/
+*.log.*
 
+# ============================================
 # Environment variables
+# ============================================
 .env
 .env.local
 .env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
 
+# ============================================
 # Temporary files
+# ============================================
 *.tmp
 *.temp
+*.bak
+*.cache
 .cache/
 
-# Documentation builds (if any)
+# ============================================
+# Documentation builds
+# ============================================
 docs/_build/
 site/
+
+# ============================================
+# Database
+# ============================================
+*.db
+*.sqlite
+*.sqlite3
+
+# ============================================
+# Coverage reports
+# ============================================
+coverage/
+.nyc_output/
+*.lcov
+
+# ============================================
+# Build artifacts
+# ============================================
+*.tgz
+*.gz
+*.zip
+*.tar

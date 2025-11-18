@@ -3,6 +3,38 @@
 ## ✅ Projeto Implementado com Sucesso
 
 Sistema TODO List fullstack completo desenvolvido seguindo os requisitos do desafio técnico da JTech, demonstrando competências de desenvolvedor pleno em arquitetura, SOLID e boas práticas.
+Teste local:
+
+## 📸 Screenshots da Aplicação
+
+### 🔐 Tela de Login
+Interface de autenticação com validação em tempo real, 
+feedback visual e design responsivo usando Angular Material.
+
+![Tela de Login](img_1.png)
+
+**Funcionalidades:**
+- ✅ Validação de email e senha em tempo real
+- ✅ Feedback visual de erros
+- ✅ Loading state durante autenticação
+- ✅ Integração com JWT
+- ✅ Redirecionamento automático após login
+
+### 📋 Dashboard - Gerenciamento de Tarefas
+Interface principal com arquitetura modular SOLID, 
+permitindo gerenciamento completo de listas e tarefas.
+
+![Dashboard Principal](img.png)
+
+**Funcionalidades:**
+- ✅ Sidebar de Listas
+- ✅ Área de Tarefas
+- ✅ Toggle de Status
+- ✅ CRUD Completo
+- ✅ Feedback Visual
+- ✅ Arquitetura SOLID
+- ✅ Comunicação Reativa
+- ✅ Gerenciamento de Estado
 
 ### 🎯 Status da Implementação
 

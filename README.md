@@ -3,7 +3,6 @@
 ## ✅ Projeto Implementado com Sucesso
 
 Sistema TODO List fullstack completo desenvolvido seguindo os requisitos do desafio técnico da JTech, demonstrando competências de desenvolvedor pleno em arquitetura, SOLID e boas práticas.
-Teste local:
 
 ## 📸 Screenshots da Aplicação
 

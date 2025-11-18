@@ -202,9 +202,6 @@ export class DashboardComponent implements OnInit {
     const tasklist = this.selectedTasklist();
     if (!tasklist) return;
     
-    console.log('🔍 Creating task with tasklistId:', tasklist.id);
-    console.log('🔍 Current user:', this.currentUser());
-    
     this.taskService.create({ ...data, tasklistId: tasklist.id }).subscribe({
       next: (task: Task) => {
         this.tasks.update((tasks: Task[]) => [...tasks, task]);

@@ -87,8 +87,6 @@ public class TaskController {
     }
 
     private String getUserIdFromAuth(Authentication authentication) {
-        // The email is stored in the authentication principal (JWT subject)
-        // We need to fetch the user UUID from the repository
         String email = authentication.getName();
         return userRepository.findByEmail(email)
                 .orElseThrow(() -> new IllegalArgumentException("User not found"))

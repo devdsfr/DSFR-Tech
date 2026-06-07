@@ -10,150 +10,155 @@ export type Post = {
 
 export const posts: Post[] = [
   {
-    slug: 'rtx-5070-vs-rx-9070-xt-2026-06-07-17',
-    title: 'RTX 5070 vs RX 9070 XT: Qual Placa de Vídeo Comprar em 2026?',
+    slug: 'melhores-ssds-m2-para-ps5-2026-06-07-18',
+    title: 'Melhores SSDs M.2 para PS5 em 2026: Guia Completo com Benchmarks Reais',
     excerpt:
-      'A NVIDIA RTX 5070 e a AMD RX 9070 XT brigam de frente na faixa de R$ 4.000 a R$ 5.000. Comparamos desempenho, ray tracing, consumo e custo-benefício real para você decidir.',
+      'Expandir o armazenamento do PS5 com um SSD M.2 NVMe nunca foi tão acessível. Comparamos os melhores modelos de 2026 com benchmarks reais, preços em reais e tudo o que você precisa saber antes de comprar.',
     date: '07 de junho de 2026',
     readTime: '10 min',
-    category: 'Hardware',
+    category: 'Console & Gaming',
     content: `
-## O duelo mais acirrado de 2026
+## Por que expandir o armazenamento do PS5?
 
-Em 2026, a disputa entre **NVIDIA** e **AMD** na faixa intermediária-alta nunca esteve tão equilibrada. A **RTX 5070** e a **RX 9070 XT** competem diretamente na mesma faixa de preço — entre R$ 4.000 e R$ 5.200 no mercado brasileiro — e as duas entregam desempenho excelente em 1440p e 4K.
+O PlayStation 5 vem de fábrica com apenas **825 GB de SSD interno**, dos quais cerca de **667 GB ficam disponíveis** para o usuário após o sistema operacional. Em 2026, isso é insuficiente para quem gosta de manter vários jogos instalados ao mesmo tempo: um único título AAA moderno como *Final Fantasy VII Rebirth* ocupa mais de 100 GB, e *Call of Duty: Black Ops 7* chega a 150 GB com todos os pacotes instalados.
 
-A grande questão não é mais "qual é mais rápida na rasterização básica" — ambas são próximas o suficiente que a maioria dos usuários não vai notar diferença em jogos comuns. O que vai separar a melhor escolha **para você** são fatores como **ray tracing, upscaling, consumo energético, ecossistema de software e casos de uso específicos**.
+A boa notícia é que a Sony permite a expansão do armazenamento interno desde a atualização de firmware 21.01-04.00 e o processo é **reversível, simples e não anula a garantia**. O slot M.2 interno do PS5 aceita SSDs do formato **2230, 2242, 2260 e 2280** com interface PCIe Gen 4, oferecendo velocidades de leitura comparáveis ao SSD original do console.
 
-Este artigo analisa os dois modelos com dados reais para que você tome a decisão certa.
+Este guia mostra os melhores SSDs M.2 disponíveis no Brasil em 2026, com benchmarks reais e recomendações por faixa de preço.
 
-## Especificações técnicas comparadas
+## O que o PS5 exige de um SSD M.2?
 
-Antes dos benchmarks, é fundamental entender o que cada GPU traz em termos de hardware:
+Antes de comprar qualquer SSD, é essencial entender os requisitos técnicos do PS5:
 
-**RTX 5070 (NVIDIA Blackwell):**
-- Arquitetura: Blackwell (GB205)
-- Shader processors: 6.144 CUDA cores
-- VRAM: 12 GB GDDR7 em barramento de 192-bit
-- TDP: 250W
-- Tensor Cores: 4ª geração (suporte a DLSS 4 com Multi Frame Generation)
-- RT Cores: 3ª geração
-- Encoder: NVENC 8ª geração (AV1 dual)
-- Preço médio no Brasil (2026): R$ 4.600 a R$ 5.000
+**Interface obrigatória:** PCIe Gen 4 x4 com interface NVMe. SSDs SATA ou PCIe Gen 3 não são compatíveis com o slot interno do PS5 e simplesmente não funcionarão.
 
-**RX 9070 XT (AMD RDNA 4):**
-- Arquitetura: RDNA 4 (Navi 48)
-- Shader processors: 4.096 Stream Processors (com IPC muito maior que gerações anteriores)
-- VRAM: 16 GB GDDR6 em barramento de 256-bit
-- TDP: 304W
-- AI Accelerators: WMMA 2ª geração (suporte a FSR 4 com geração de quadros)
-- Ray Accelerators: RDNA 4 (2x mais unidades que RDNA 3)
-- Encoder: AMF RDNA 4 (AV1 com qualidade reformulada)
-- Preço médio no Brasil (2026): R$ 3.900 a R$ 4.500
+**Velocidade mínima recomendada:** a Sony recomenda oficialmente SSDs com velocidade de leitura sequencial de pelo menos **5.500 MB/s**. Na prática, o SSD original do PS5 atinge 5.500 MB/s, e qualquer SSD Gen 4 moderno iguala ou supera essa velocidade.
 
-O primeiro diferencial visível: a RX 9070 XT tem **4 GB a mais de VRAM** (16 GB vs 12 GB) por um preço geralmente inferior. Isso já é um ponto importante para certas aplicações.
+**Capacidade:** o PS5 aceita SSDs de **250 GB a 4 TB**. Para uso prático, 1 TB é o mínimo recomendado — 2 TB é o ponto ideal de custo-benefício em 2026.
 
-## Desempenho em jogos: rasterização pura
+**Dissipador de calor:** o slot M.2 do PS5 tem espaço limitado e o compartimento não tem ventilação direta. Um **dissipador de calor** (heatsink) é fortemente recomendado — alguns SSDs já incluem um, outros precisam de um separado. A altura máxima com dissipador é de **11,25 mm**.
 
-Em jogos tradicionais sem ray tracing, os dois modelos andam de mãos dadas na maior parte dos títulos. Benchmarks em **1440p Ultra** mostram o seguinte cenário geral:
+**Formato físico:** o formato mais comum e recomendado é o **2280** (22mm de largura, 80mm de comprimento). O PS5 também aceita os formatos 2230, 2242 e 2260.
 
-- Cyberpunk 2077 (sem RT): RTX 5070 com ~102 fps, RX 9070 XT com ~108 fps — **AMD na frente por ~6%**
-- Call of Duty: Modern Warfare IV: RTX 5070 com ~165 fps, RX 9070 XT com ~158 fps — **NVIDIA na frente por ~4%**
-- Alan Wake 2 (sem RT): RTX 5070 com ~88 fps, RX 9070 XT com ~91 fps — **AMD na frente por ~3%**
-- Horizon Forbidden West: RTX 5070 com ~120 fps, RX 9070 XT com ~114 fps — **NVIDIA na frente por ~5%**
-- Spider-Man 2: RTX 5070 com ~95 fps, RX 9070 XT com ~97 fps — **Empate técnico**
+## Samsung 990 Pro — O mais confiável para PS5
 
-**Conclusão na rasterização:** os dois são praticamente equivalentes em 1440p. Em **4K**, a RTX 5070 abre uma pequena vantagem consistente de 5-8% na maioria dos títulos, provavelmente pela vantagem do GDDR7 em largura de banda.
+O **Samsung 990 Pro** continua sendo uma das melhores escolhas para PS5 em 2026. Lançado originalmente em 2023 e com firmware atualizado diversas vezes desde então, ele combina velocidade excelente, **confiabilidade comprovada** e temperatura controlada — fator crucial dentro do compartimento fechado do PS5.
 
-## Ray Tracing: aqui a NVIDIA ainda domina
+**Especificações:**
+- Interface: PCIe Gen 4 x4 NVMe 2.0
+- Leitura sequencial: 7.450 MB/s
+- Escrita sequencial: 6.900 MB/s (2 TB)
+- Controlador: Samsung Elpis (MJX)
+- NAND: Samsung V-NAND TLC 176 camadas
+- Garantia: 5 anos / 1.200 TBW (2 TB)
+- Inclui dissipador: versão "with Heatsink" disponível
 
-O ray tracing continua sendo o território natural da NVIDIA. Os RT Cores de 3ª geração da arquitetura Blackwell fazem uma diferença real em jogos que usam o recurso de forma intensiva:
+**Desempenho no PS5:** o 990 Pro atinge consistentemente 7.000-7.200 MB/s de leitura no benchmark interno do console. Os tempos de carregamento de jogos como *Demon's Souls* (2,3 segundos vs 4,2 segundos no SSD original) mostram melhoria real, especialmente em títulos mais antigos.
 
-Em Cyberpunk 2077 com **Overdrive Mode** (ray tracing total em 1440p):
-- RTX 5070: ~68 fps com DLSS 4 Quality
-- RX 9070 XT: ~52 fps com FSR 4 Quality
+**Preço médio no Brasil (2026):**
+- 1 TB: R$ 420-480
+- 2 TB: R$ 720-820
+- 4 TB: R$ 1.500-1.800
 
-Em Alan Wake 2 com **ray tracing habilitado**:
-- RTX 5070: ~74 fps com DLSS 4
-- RX 9070 XT: ~58 fps com FSR 4
+**Veredicto:** melhor escolha para quem prioriza estabilidade e suporte a longo prazo. Firmware maduro, temperatura controlada e garantia sólida fazem dele a opção mais segura.
 
-A diferença aqui é de **25-35%** favorável à NVIDIA em cenários de ray tracing pesado. Se você joga títulos que fazem uso intensivo de RT — Cyberpunk, Alan Wake, Metro Exodus Enhanced — a RTX 5070 entrega uma experiência significativamente melhor.
+## WD Black SN850X — O favorito dos gamers
 
-Para quem **não liga para ray tracing** e joga títulos competitivos, shooters ou jogos sem suporte a RT relevante, essa vantagem desaparece completamente.
+O **WD Black SN850X** é consistentemente apontado como o melhor SSD para consoles e gaming por especialistas desde seu lançamento. Em 2026, ainda é uma referência — especialmente porque a versão com **heatsink já incluído** é perfeita para o PS5 sem precisar comprar dissipador separadamente.
 
-## Upscaling: DLSS 4 vs FSR 4
+**Especificações:**
+- Interface: PCIe Gen 4 x4 NVMe 1.4
+- Leitura sequencial: 7.300 MB/s
+- Escrita sequencial: 7.100 MB/s (2 TB)
+- Controlador: WD in-house (Zoned Storage)
+- NAND: BiCS5 TLC 112 camadas
+- Garantia: 5 anos / 1.200 TBW (2 TB)
+- Inclui dissipador: sim (versão heatsink)
 
-Esta geração marcou uma mudança importante no upscaling da AMD. O **FSR 4** com Machine Learning (disponível apenas em RDNA 4) reduziu dramaticamente a diferença de qualidade para o DLSS:
+**Desempenho no PS5:** o SN850X se destaca no desempenho de **IOPS aleatório** — operações de leitura/escrita de pequenos arquivos — que são relevantes para o carregamento de texturas e assets individuais nos jogos. Na prática, ele entrega os menores tempos de carregamento em títulos como *Horizon Forbidden West* e *Gran Turismo 7*.
 
-**DLSS 4 (RTX 5070) com Multi Frame Generation:**
-- Pode gerar até 3 quadros extras por quadro renderizado
-- Qualidade de imagem: excelente, com artefatos mínimos em movimento
-- Requer hardware NVIDIA dedicado (Tensor Cores)
-- Suporte crescente nos jogos mais recentes
+**Temperatura:** o heatsink incluso mantém o SSD em torno de **55-62°C** durante uso intenso no PS5 — dentro da faixa segura.
 
-**FSR 4 (RX 9070 XT) com ML Upscaling e Frame Generation:**
-- ML Upscaling disponível apenas em RDNA 4 (melhoria enorme vs FSR 3)
-- Frame Generation: gera 1 quadro extra (vs até 3 do DLSS 4)
-- Qualidade: comparável ao DLSS 3 Quality na maioria dos testes
-- Vantagem histórica: funciona em GPUs de outras fabricantes (mas o ML não)
+**Preço médio no Brasil (2026):**
+- 1 TB (sem heatsink): R$ 380-440
+- 1 TB (com heatsink): R$ 430-500
+- 2 TB (com heatsink): R$ 680-780
 
-Na prática para o usuário final: **DLSS 4 ainda tem vantagem** na geração de múltiplos quadros, mas o FSR 4 com ML finalmente entrega qualidade visual competitiva no upscaling estático. A diferença maior é na quantidade de frames sintéticos gerados.
+**Veredicto:** melhor desempenho geral para gaming. A versão com heatsink elimina a necessidade de compra separada e é plug-and-play para o PS5.
 
-## VRAM: 16 GB da AMD importa?
+## Seagate FireCuda 530 — Alta performance, preço competitivo
 
-A RX 9070 XT tem **4 GB a mais de VRAM** que a RTX 5070. Em 2026, isso começa a ser relevante em alguns cenários:
+O **Seagate FireCuda 530** é uma das opções mais rápidas do mercado e frequentemente encontrada por preços menores que a concorrência em lojas brasileiras. Com velocidades que chegam a **7.300 MB/s de leitura**, ele supera facilmente o mínimo exigido pelo PS5.
 
-- **Jogos em 4K com texturas Ultra:** alguns títulos recentes consomem 11-13 GB em 4K Ultra, onde a RTX 5070 pode sofrer compressão de memória
-- **IA generativa local:** modelos como Stable Diffusion XL e LLaVA em qualidade alta se beneficiam dos 16 GB
-- **Edição de vídeo:** DaVinci Resolve com projetos 4K RAW usa VRAM intensivamente — 16 GB dão mais margem
-- **Múltiplos monitores com jogos:** em setups com 3 monitores, a VRAM extra da AMD tem mais relevância
+**Especificações:**
+- Interface: PCIe Gen 4 x4 NVMe 1.4
+- Leitura sequencial: 7.300 MB/s
+- Escrita sequencial: 6.900 MB/s (2 TB)
+- Controlador: Phison E18
+- NAND: Micron 176-layer TLC
+- Garantia: 5 anos / 1.275 TBW (2 TB)
+- Inclui dissipador: versão com heatsink disponível
 
-Para **gaming puro em 1440p**, os 12 GB da RTX 5070 são suficientes para todos os jogos de 2026. A vantagem da AMD aqui é mais relevante para uso profissional ou para quem planeja usar a GPU por 4 ou mais anos.
+**Ponto de atenção:** o FireCuda 530 tende a rodar mais quente que o SN850X e o 990 Pro. Se você comprar a versão sem heatsink, **adquira um dissipador separado** — opções de marca genérica custam entre R$ 50 e R$ 100 no Brasil e funcionam bem.
 
-## Consumo de energia e temperatura
+**Preço médio no Brasil (2026):**
+- 1 TB: R$ 350-420
+- 2 TB: R$ 620-720
+- 4 TB: R$ 1.300-1.600
 
-Este é um ponto onde a NVIDIA tem vantagem clara:
+**Veredicto:** ótima opção de custo-benefício, especialmente se encontrado em promoção. Certifique-se de usar com dissipador.
 
-| Cenário | RTX 5070 | RX 9070 XT |
-|---|---|---|
-| TDP oficial | 250W | 304W |
-| Consumo real em jogo | ~240W | ~290W |
-| Temperatura máxima | ~72°C | ~80°C |
-| Fonte recomendada | 650W | 750W |
+## Kingston Fury Renegade — A opção mais agressiva
 
-A diferença de ~50W no consumo real tem impacto real: **na conta de luz** em uso intensivo (streamers, gamers que jogam 6 horas por dia ou mais) e no **aquecimento do gabinete**, especialmente em setups sem ventilação ideal. Se você mora em região quente ou tem um gabinete compacto, o consumo menor da RTX 5070 é um fator a considerar seriamente.
+O **Kingston Fury Renegade** é a entrada da Kingston no segmento enthusiast e entrega números impressionantes: **7.300 MB/s de leitura** e preços que competem diretamente com o Seagate FireCuda 530 no mercado brasileiro.
 
-## Qual comprar? O veredicto por perfil de uso
+**Especificações:**
+- Interface: PCIe Gen 4 x4 NVMe 2.0
+- Leitura sequencial: 7.300 MB/s
+- Escrita sequencial: 7.000 MB/s (2 TB)
+- Controlador: Phison E18
+- NAND: Micron 176-layer TLC
+- Garantia: 5 anos / 1.000 TBW (2 TB)
 
-**Escolha a RTX 5070 se:**
-- Você joga títulos com ray tracing intensivo (Cyberpunk, Alan Wake, jogos DirectX 12 Ultimate)
-- Quer o melhor upscaling disponível com DLSS 4 Multi Frame Generation
-- Tem gabinete com ventilação limitada ou fonte de 650W
-- Faz streaming e quer o NVENC de 8ª geração com dual encoder
-- Prefere um ecossistema consolidado (GeForce Experience, NVIDIA Broadcast, drivers maduros)
+**Diferencial:** disponível na versão de **4 TB** por preços mais acessíveis que a concorrência — uma boa escolha para quem quer máxima capacidade sem gastar uma fortuna.
 
-**Escolha a RX 9070 XT se:**
-- Joga majoritariamente títulos sem RT ou competitivos (FPS, MOBA, RPGs sem RT)
-- Usa a GPU para IA generativa local ou edição de vídeo 4K que se beneficia dos 16 GB
-- Quer pagar menos (a RX 9070 XT é geralmente R$ 300-600 mais barata)
-- Prefere o ecossistema AMD (FreeSync, Radeon Software, integração com Ryzen)
-- Planeja usar a GPU por mais de 4 anos (16 GB de VRAM têm mais margem futura)
+**Preço médio no Brasil (2026):**
+- 1 TB: R$ 340-400
+- 2 TB: R$ 590-690
+- 4 TB: R$ 1.200-1.450
 
-Em 2026, a **RX 9070 XT oferece o melhor custo-benefício absoluto** na faixa de R$ 4.000 — mais VRAM, desempenho equivalente em rasterização e preço menor. Para a maioria dos gamers brasileiros que jogam em 1440p, ela é a compra mais inteligente. A **RTX 5070 justifica seu preço maior** para quem prioriza ray tracing, DLSS 4 com geração múltipla de quadros ou menor consumo energético. O mercado de GPUs raramente esteve tão equilibrado.
-    `.trim(),
-  },
-  {
-    slug: 'gpus-para-streaming-2026-06-07-16',
-    title: 'Melhores Placas de Vídeo para Streaming em 2026: NVENC, AMF e Desempenho Real',
-    excerpt:
-      'Quer transmitir ao vivo sem travar o jogo? Analisamos as melhores GPUs para streaming em 2026, comparando encoders de hardware NVENC e AMF com benchmarks reais.',
-    date: '07 de junho de 2026',
-    readTime: '9 min',
-    category: 'Hardware',
-    content: `
-## Por que a GPU é fundamental para o streaming?
+**Veredicto:** excelente para quem precisa de muito espaço. O TBW (vida útil em escrita) é ligeiramente menor que a concorrência, mas mais que suficiente para uso em console.
 
-Fazer streaming de alta qualidade enquanto joga exige muito mais da máquina do que simplesmente rodar um jogo em alta resolução. O processo de **capturar, codificar e transmitir vídeo em tempo real** é extremamente pesado — e a forma como você divide essa carga entre CPU e GPU define completamente a qualidade da transmissão e o desempenho no jogo.
+## Qual capacidade escolher: 1 TB, 2 TB ou 4 TB?
 
-Em 2026, o padrão de ouro é usar o **encoder de hardware da GPU** (NVENC na NVIDIA ou AMF na AMD) para a codificação do stream, liberando o processador para rodar o jogo. Dependendo da GPU escolhida, a diferença em qualidade de imagem transmitida pode ser enorme — e algumas placas entregam streams tão bons quanto a codificação por software (x264), sem custo algum de desempenho no jogo.
+Esta é a dúvida mais comum e a resposta depende do seu perfil de uso:
 
-Neste artigo, analisamos as melhores GPUs para streaming em 2026
+**1 TB:** soma com o armazenamento interno do PS5, chegando a **1,6 TB total**. Suficiente para quem mantém 10-15 jogos instalados e não se importa em desinstalar eventualmente. Melhor custo por GB até determinado ponto.
+
+**2 TB:** a recomendação da maioria dos especialistas em 2026. Com o armazenamento total chegando a ~2,6 TB, você pode manter os jogos de forma muito mais confortável — cerca de 20-30 títulos completos sem se preocupar com espaço.
+
+**4 TB:** para colecionadores digitais e quem tem um grande backlog de jogos. O preço por GB ainda é menos eficiente, mas quem já encheu um SSD de 2 TB vai apreciar a margem.
+
+## Como instalar o SSD no PS5: passo a passo simplificado
+
+A instalação é simples e leva menos de 15 minutos:
+
+1. **Desligue o PS5 completamente** (não modo de espera) e desconecte todos os cabos
+2. **Remova a tampa do console**: posicione o PS5 com o logo para cima, segure as abas e deslize a tampa para cima/frente
+3. **Localize o slot M.2**: é um compartimento próximo ao ventilador, coberto por uma pequena tampa de metal com um parafuso
+4. **Remova o parafuso do slot** e a tampa do compartimento
+5. **Insira o SSD no ângulo correto** (cerca de 30°) e pressione suavemente até encaixar
+6. **Fixe com o parafuso** fornecido pelo PS5 (ele inclui parafusos para todos os tamanhos de SSD)
+7. **Recoloque as tampas** e conecte o console
+8. **Ligue o PS5**: ele vai detectar o novo SSD e pedir para formatar automaticamente — confirme
+
+O processo completo está documentado no suporte oficial da Sony e em dezenas de tutoriais em vídeo no YouTube.
+
+## Tabela comparativa final
+
+| SSD | Leitura | Escrita | 1 TB (BR) | 2 TB (BR) | Heatsink incluso |
+|---|---|---|---|---|---|
+| Samsung 990 Pro | 7.450 MB/s | 6.900 MB/s | R$ 450 | R$ 770 | Versão separada |
+| WD Black SN850X | 7.300 MB/s | 7.100 MB/s | R$ 465 | R$ 730 | Sim (versão HX) |
+| Seagate FireCuda 530 | 7.300 MB/s | 6.900 MB/s | R$ 385 | R$ 670 | Versão separada |
+| Kingston Fury Renegade | 7.300 MB/s | 7.000 MB

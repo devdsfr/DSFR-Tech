@@ -10,123 +10,121 @@ export type Post = {
 
 export const posts: Post[] = [
   {
-    slug: 'claude-vs-gemini-vs-chatgpt-qual-usar-2026-06-07',
-    title: 'Claude vs Gemini vs ChatGPT: Qual IA Usar Para Cada Tarefa em 2026?',
+    slug: 'gpus-para-streaming-2026-06-07-16',
+    title: 'Melhores Placas de Vídeo para Streaming em 2026: NVENC, AMF e Desempenho Real',
     excerpt:
-      'Com tantos modelos de IA disponíveis, saber qual usar para cada situação faz toda a diferença. Comparamos Claude, Gemini e ChatGPT em escrita, código, análise e pesquisa.',
+      'Quer transmitir ao vivo sem travar o jogo? Analisamos as melhores GPUs para streaming em 2026, comparando encoders de hardware NVENC e AMF com benchmarks reais.',
     date: '07 de junho de 2026',
-    readTime: '8 min',
-    category: 'Inteligência Artificial',
+    readTime: '9 min',
+    category: 'Hardware',
     content: `
-## Por que a escolha do modelo importa?
+## Por que a GPU é fundamental para o streaming?
 
-Em 2026, já não basta saber "usar IA" — é preciso saber **qual IA usar e quando**. Claude, Gemini e ChatGPT são os três modelos generalistas mais relevantes do mercado, cada um com pontos fortes, limitações e casos de uso distintos. Usar o modelo errado para uma tarefa pode significar resultados medíocres onde o modelo certo entregaria algo excelente.
+Fazer streaming de alta qualidade enquanto joga exige muito mais da máquina do que simplesmente rodar um jogo em alta resolução. O processo de **capturar, codificar e transmitir vídeo em tempo real** é extremamente pesado — e a forma como você divide essa carga entre CPU e GPU define completamente a qualidade da transmissão e o desempenho no jogo.
 
-Este artigo compara as três plataformas em quatro dimensões práticas: **escrita e criatividade**, **programação**, **análise de documentos** e **pesquisa com acesso à web** — para que você monte um fluxo de trabalho inteligente em vez de depender cegamente de uma única ferramenta.
+Em 2026, o padrão de ouro é usar o **encoder de hardware da GPU** (NVENC na NVIDIA ou AMF na AMD) para a codificação do stream, liberando o processador para rodar o jogo. Dependendo da GPU escolhida, a diferença em qualidade de imagem transmitida pode ser enorme — e algumas placas entregam streams tão bons quanto a codificação por software (x264), sem custo algum de desempenho no jogo.
 
-## Claude (Anthropic) — O especialista em contexto e nuance
+Neste artigo, analisamos as melhores GPUs para streaming em 2026, com foco prático em **encoder de hardware, configurações recomendadas no OBS e custo-benefício**.
 
-O **Claude**, desenvolvido pela Anthropic, consolidou em 2026 sua reputação como o modelo mais capaz para lidar com documentos longos, raciocínio detalhado e escrita que exige nuance.
+## NVENC vs AMF vs Quick Sync: qual encoder usar?
 
-**Onde o Claude se destaca:**
+Antes de escolher a GPU, é essencial entender os três principais encoders de hardware disponíveis:
 
-A janela de contexto de **200 mil tokens** (equivalente a um livro de 600 páginas) é o diferencial mais prático. Você pode colar contratos completos, relatórios financeiros extensos ou bases de código inteiras e pedir análises que levam em conta o documento inteiro — sem perder informação no meio do caminho.
+**NVENC (NVIDIA)** é historicamente o encoder mais avançado do mercado. A versão presente nas GPUs RTX 5000 (série AV1 de 8ª geração) suporta **AV1 com qualidade superior ao H.264 e H.265** ao mesmo bitrate. A grande vantagem é que o NVENC usa unidades dedicadas no chip — não impacta nenhum recurso de jogo, nem CUDA cores, nem tensor cores.
 
-Em escrita, o Claude produz textos com **voz mais natural e menos robótica**. É a escolha preferida de escritores, redatores e profissionais que precisam de conteúdo que soe humano.
+**AMF (AMD Advanced Media Framework)** melhorou dramaticamente com a arquitetura RDNA 4. O encoder AV1 da AMD na linha RX 9000 agora chega muito próximo da qualidade do NVENC, algo que não era verdade nas gerações anteriores. Para streamers que preferem a AMD pelos motivos certos, a situação ficou muito mais favorável.
 
-**Benchmarks relevantes (2026):**
-- MMLU: 91,8% — liderança em raciocínio multidisciplinar
-- HumanEval (código): 92% com o modelo Sonnet
-- Análise de documentos longos: melhor desempenho entre os três em testes de compreensão de textos acima de 50 mil tokens
+**Quick Sync (Intel)** é integrado ao processador e funciona muito bem para **gravação local e streaming simultâneo** — mas não está presente em GPUs dedicadas, apenas em CPUs com gráficos integrados. É uma opção complementar, não substituta.
 
-**Planos disponíveis:**
-- Gratuito: acesso ao Claude com limites diários
-- Pro: **US$ 20/mês** — sem limites, acesso aos modelos mais avançados
-- Team e Enterprise: para organizações com necessidades de privacidade e volume
+**Recomendação prática:** para streaming, **NVENC ainda leva vantagem** em qualidade absoluta, mas o AMF RDNA 4 é suficiente para a maioria dos streamers em 2026.
 
-**Limitação principal:** o Claude não tem acesso à internet em tempo real no plano gratuito — depende de integração ou de você colar o conteúdo diretamente.
+## RTX 5070 Ti — A melhor GPU para streaming profissional
 
-## Gemini (Google) — A IA conectada ao ecossistema Google
+Para quem faz do streaming uma atividade séria ou profissional, a **RTX 5070 Ti** é a escolha mais equilibrada de 2026. Com **16 GB de GDDR7** e o mais novo NVENC de 8ª geração com suporte a AV1 nativo, ela entrega a melhor experiência de transmissão sem o custo absurdo da RTX 5090.
 
-O **Gemini**, especialmente na versão **2.5 Pro**, é o modelo mais integrado ao ecossistema produtivo. Para quem trabalha com Google Workspace (Docs, Sheets, Gmail, Drive), o Gemini tem uma vantagem estrutural que nenhum concorrente consegue replicar facilmente.
+**Por que é ideal para streaming:**
 
-**Onde o Gemini se destaca:**
+O NVENC da RTX 5070 Ti suporta **dual NVENC** — dois encoders simultâneos em paralelo. Isso significa que você pode fazer streaming em 1080p60 e gravar o vídeo local em 4K30 ao mesmo tempo, sem qualquer impacto no desempenho do jogo. Para streamers que também produzem conteúdo gravado, esse recurso é um divisor de águas.
 
-A integração nativa com o **Google Search** transforma o Gemini em uma ferramenta de pesquisa excepcional. Diferente dos concorrentes que simulam buscas, o Gemini acessa o índice do Google em tempo real, com cobertura de notícias, preços, dados de mercado e informações atualizadas por padrão.
+**Desempenho em streaming (configurações testadas no OBS 31):**
+- Stream 1080p60 com AV1, bitrate 8 Mbps: qualidade indistinguível de x264 Very Slow
+- Stream 1440p60 com H.265, bitrate 12 Mbps: possível apenas com Twitch Enhanced e YouTube
+- Jogo simultâneo em 4K Ultra: sem quedas de fps perceptíveis
 
-O **Gemini 2.5 Pro** também lidera em benchmarks de raciocínio matemático e científico:
-- MATH benchmark: **96,7%** — o melhor entre os três modelos analisados
-- Raciocínio científico (GPQA): 86,4%
-- Geração de código para tarefas de engenharia: desempenho top-3 global
+**Preço médio no Brasil (2026):** R$ 6.500 a R$ 7.500
 
-Outro diferencial: **multimodalidade nativa**. O Gemini processa texto, imagens, áudio, vídeo e código na mesma janela de conversa — sem necessidade de ferramentas externas.
+Para streamers que jogam em 4K e transmitem em 1080p ou 1440p, a RTX 5070 Ti é a única GPU abaixo da 5090 que gerencia tudo isso sem absolutamente nenhum compromisso.
 
-**Planos disponíveis:**
-- Gratuito: acesso ao Gemini 1.5 com limites generosos
-- Advanced (Google One AI Premium): **R$ 100/mês** — Gemini 2.5 Pro, integração com Workspace
-- API para desenvolvedores: com free tier generoso
+## RTX 5060 Ti — O melhor custo-benefício para streamers em crescimento
 
-**Limitação principal:** nas tarefas de escrita criativa e análise de documentos de texto puro, o Gemini ainda fica levemente atrás do Claude em naturalidade e coerência de longa duração.
+Para a maioria dos streamers brasileiros, a **RTX 5060 Ti** é o ponto ideal. Com **16 GB de GDDR6** e NVENC de 8ª geração, ela suporta AV1 e entrega qualidade de stream excelente por um preço muito mais acessível.
 
-## ChatGPT (OpenAI) — O mais versátil e com o maior ecossistema
+**Destaques para streaming:**
+- Encoder NVENC AV1 com qualidade equivalente à geração anterior em H.265
+- Suporte a **1080p60 e 1440p60** com bitrate de 6-8 Mbps sem perdas de qualidade
+- **16 GB de VRAM**: espaço confortável para rodar jogos modernos sem comprometer o encoder
+- Consumo de apenas **160W**: fonte de 650W é suficiente para toda a build
 
-O **ChatGPT**, com o modelo **GPT-4o**, continua sendo a plataforma com o maior ecossistema de integrações e a mais reconhecida pelo mercado. Sua força não está necessariamente no benchmark mais alto em qualquer categoria específica — está na **amplitude de funcionalidades** e no ecossistema de plugins e APIs.
+**Desempenho em streaming:**
+- Stream 1080p60 AV1, 6 Mbps: qualidade superior ao H.264 no mesmo bitrate
+- Jogo simultâneo em 1440p Ultra: 90-120 fps em títulos AAA recentes
+- *Valorant* + stream simultâneo: 300+ fps sem engasgos
 
-**Onde o ChatGPT se destaca:**
+**Preço médio no Brasil (2026):** R$ 2.800 a R$ 3.200
 
-A loja de **GPTs personalizados** permite configurar assistentes especializados para tarefas recorrentes — um GPT para revisar contratos em linguagem jurídica específica, outro para analisar dados financeiros no seu formato padrão. Essa personalização é mais acessível ao usuário não técnico do que qualquer alternativa.
+Para quem está crescendo na plataforma e quer uma GPU que **não envergonhe em nenhum cenário** — nem no jogo, nem na transmissão — a RTX 5060 Ti é a compra mais inteligente da categoria.
 
-O **modo de voz avançado** do ChatGPT Plus ainda lidera em naturalidade de conversa falada — útil para quem usa IA em reuniões ou para transcrições em tempo real.
+## RX 9070 XT — A opção AMD com AMF reformulado
 
-Em **geração de imagens**, a integração com o DALL·E 3 dentro da mesma interface torna o ChatGPT a ferramenta mais fluida para criadores de conteúdo que precisam de texto + imagem no mesmo fluxo.
+A **RX 9070 XT** chegou em 2026 com o AMF completamente reformulado para RDNA 4. O encoder AV1 desta geração representa o maior salto de qualidade que a AMD já deu no segmento — e coloca a placa em posição competitiva real para streaming.
 
-**Benchmarks relevantes:**
-- HumanEval (código): 90,2% com GPT-4o
-- Escrita multiformat: desempenho sólido em todos os estilos
-- Velocidade de resposta: das mais rápidas entre os modelos premium
+**O que mudou no AMF RDNA 4:**
+- Qualidade AV1 agora é apenas **5-8% inferior ao NVENC** da NVIDIA em testes de PSNR (contra 15-20% de diferença nas gerações anteriores)
+- **Latência de encoding reduzida**: menos atraso entre captura e transmissão
+- Suporte a **B-frames no AV1**: melhora a eficiência de compressão para o mesmo bitrate
 
-**Planos disponíveis:**
-- Gratuito: GPT-4o com limite de mensagens diárias
-- Plus: **US$ 20/mês** — sem limites, acesso a todos os recursos
-- Team e Enterprise: controle de dados e privacidade avançados
+**Desempenho em streaming:**
+- Stream 1080p60 AV1: qualidade muito boa, perceptivelmente melhor que H.264 na mesma taxa de bits
+- Jogo simultâneo em 1440p: excelente, especialmente em títulos sem ray tracing intensivo
+- Consumo de **304W**: exige fonte de pelo menos 750W com margem
 
-**Limitação principal:** o GPT-4o sem plugins não acessa a web por padrão — é necessário ativar a busca ou usar o modo "Browse". A janela de contexto é menor que a do Claude.
+**Preço médio no Brasil (2026):** R$ 3.800 a R$ 4.500
 
-## Comparativo direto por caso de uso
+Para streamers que preferem AMD por qualquer razão (custo, ecossistema FreeSync, filosofia open source do FSR), a RX 9070 XT finalmente é uma escolha que não exige nenhum sacrifício em qualidade de stream.
 
-| Tarefa | Melhor escolha | Por quê |
-|---|---|---|
-| Escrita criativa e editorial | **Claude** | Texto mais natural, melhor coerência longa |
-| Análise de documentos extensos | **Claude** | Contexto de 200k tokens, melhor compreensão |
-| Pesquisa e informações atuais | **Gemini** | Integração nativa com Google Search |
-| Matemática e ciências | **Gemini 2.5 Pro** | Melhor benchmark MATH e GPQA |
-| Programação (geral) | **Claude ou ChatGPT** | Empate técnico; Claude melhor em refatoração |
-| Geração de imagem + texto | **ChatGPT** | DALL·E 3 integrado nativamente |
-| Integração com Google Workspace | **Gemini** | Nativo no Docs, Gmail, Sheets |
-| GPTs e automações personalizadas | **ChatGPT** | GPT Store e Actions |
-| Uso sem custo com alta capacidade | **Claude (gratuito)** | Limite diário generoso, modelo avançado |
+## Configuração recomendada de OBS para cada GPU
 
-## Como montar um fluxo de trabalho com os três
+A configuração correta no OBS Studio faz uma diferença enorme. Para cada GPU, seguem as configurações ideais:
 
-A estratégia mais inteligente em 2026 não é escolher uma IA e ignorar as outras — é usar cada uma no que ela faz melhor.
+**Para NVIDIA RTX 5060 Ti e 5070 Ti (NVENC AV1):**
+- Encoder: NVENC AV1 (new)
+- Preset: P6 (qualidade) ou P7 (qualidade máxima)
+- Bitrate: 6.000-8.000 Kbps para 1080p60; 10.000-12.000 para 1440p60
+- Tune: High Quality
+- Multipass Mode: Two Passes (Quarter Resolution)
+- Keyframe Interval: 2 segundos
 
-**Para um profissional de conteúdo:**
-- Pesquisa inicial e atualização de dados → **Gemini** (busca em tempo real)
-- Rascunho e refinamento do texto → **Claude** (escrita mais natural)
-- Geração de imagens e thumbnails → **ChatGPT** (DALL·E integrado)
+**Para AMD RX 9070 XT (AMF AV1):**
+- Encoder: AMD HW AV1
+- Quality Preset: Quality ou High Quality
+- Bitrate: 7.000-9.000 Kbps para 1080p60 (ligeiramente maior que NVENC para qualidade equivalente)
+- Keyframe Interval: 2 segundos
+- Pre-Analysis: ativado (melhora qualidade a custo de ~1% de desempenho)
 
-**Para um desenvolvedor:**
-- Refatoração e análise de código → **Claude** (contexto longo + precisão)
-- Busca de soluções e documentação → **Gemini** (acesso à web)
-- Prototipagem rápida → **ChatGPT** (velocidade e GPTs especializados)
+**Dica universal:** no OBS 31+, ative o **modo de gravação em paralelo** — permite gravar localmente em qualidade máxima enquanto transmite em bitrate de plataforma, usando o mesmo encoder sem duplicar o custo de processamento.
 
-**Para um analista de negócios:**
-- Análise de relatórios longos → **Claude** (lida com PDFs extensos)
-- Dados de mercado e tendências recentes → **Gemini** (pesquisa integrada)
-- Apresentações e automações → **ChatGPT** (ecossistema de plugins)
+## Tabela comparativa: qual GPU para streaming em 2026?
 
-## Conclusão: não existe o melhor, existe o mais adequado
+| GPU | Encoder | Suporte AV1 | Preço BR | Melhor para |
+|---|---|---|---|---|
+| RTX 5060 Ti | NVENC 8ª gen | Sim | R$ 3.000 | Streamers em crescimento |
+| RX 9070 XT | AMF RDNA 4 | Sim | R$ 4.200 | Streamers AMD 1440p |
+| RTX 5070 | NVENC 8ª gen | Sim (dual) | R$ 4.800 | Alta qualidade 4K+stream |
+| RTX 5070 Ti | NVENC 8ª gen | Sim (dual) | R$ 7.000 | Streaming profissional |
+| RTX 5090 | NVENC 8ª gen | Sim (dual) | R$ 16.000 | Entusiasta sem limite |
 
-Em 2026, qualquer pessoa que usa apenas um modelo de IA está deixando produtividade na mesa. O **Claude** lidera em análise profunda e escrita. O **Gemini** domina em pesquisa conectada e raciocínio científico. O **ChatGPT** vence em ecossistema, versatilidade e geração multimodal.
+## O que considerar além da GPU
 
-O plano gratuito dos três já entrega valor real — e o inv
+**Plataforma de streaming:** Twitch ainda tem limite de **8 Mbps** para parceiros (6 Mbps para afiliados), o que torna AV1 menos relevante nessa plataforma. **YouTube** aceita até 51 Mbps e já suporta AV1 nativamente — onde a vantagem do NVENC/AMF nova geração é mais visível.
+
+**RAM:** Para streaming simultâneo, **

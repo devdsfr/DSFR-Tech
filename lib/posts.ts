@@ -10,6 +10,91 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: 'intel-vs-amd-processadores-2026-06-07',
+    title: 'Intel vs AMD em 2026: Qual Processador Vale Mais o Seu Dinheiro?',
+    excerpt:
+      'Arrow Lake da Intel ou Zen 5 da AMD? Comparamos desempenho em jogos, produtividade e custo-benefício para ajudar você a escolher o melhor processador de 2026.',
+    date: '07 de junho de 2026',
+    readTime: '8 min',
+    category: 'Hardware',
+    content: `
+## O cenário dos processadores em 2026
+
+A briga entre **Intel** e **AMD** nunca esteve tão acirrada. Com a Intel lançando a geração Arrow Lake (Core Ultra série 200) e a AMD consolidando o sucesso da arquitetura **Zen 5** com os Ryzen 9000, o consumidor tem opções excelentes em todas as faixas de preço. Mas qual empresa domina em 2026?
+
+Neste artigo, comparamos as duas plataformas em jogos, produtividade, consumo de energia e custo-benefício — para que você tome a melhor decisão antes de montar ou atualizar seu PC.
+
+## AMD Ryzen 9000 — Zen 5 entrega o que prometeu
+
+A AMD lançou a série **Ryzen 9000** com a arquitetura Zen 5, fabricada em processo de 4nm pela TSMC. A melhoria de IPC (instruções por ciclo) foi de aproximadamente **16% em relação ao Zen 4**, o que se traduz em ganhos reais tanto em jogos quanto em workloads pesados.
+
+**Destaques da linha Ryzen 9000:**
+- **Ryzen 9 9950X**: 16 núcleos, 32 threads, 5,7 GHz boost — o processador mais rápido para criação de conteúdo abaixo de R$ 4.000
+- **Ryzen 7 9700X**: 8 núcleos, 65W de TDP — excelente eficiência energética para gamers
+- **Ryzen 5 9600X**: melhor custo-benefício na faixa de R$ 1.200 a R$ 1.500
+
+A plataforma AM5 garante compatibilidade futura até pelo menos 2027, o que é um argumento forte para quem quer longevidade no investimento. O suporte a **DDR5 e PCIe 5.0** já está presente em toda a linha.
+
+## Intel Core Ultra série 200 — Arrow Lake muda a abordagem
+
+A Intel adotou uma estratégia diferente com a geração **Arrow Lake**. Em vez de focar apenas em desempenho bruto, a empresa priorizou **eficiência energética** e integração de recursos de IA com a Neural Processing Unit (NPU) incorporada ao chip.
+
+**Destaques da linha Core Ultra 200:**
+- **Core Ultra 9 285K**: 24 núcleos (8P + 16E), excelente em multitarefa pesada
+- **Core Ultra 7 265K**: o ponto ideal de desempenho por preço na linha Intel
+- **Core Ultra 5 245K**: competitivo com o Ryzen 5 9600X, com foco em eficiência
+
+Um ponto importante: a Intel **abandonou o Hyper-Threading** nos núcleos de desempenho (P-cores) no Arrow Lake. Isso gerou controvérsia, mas na prática o impacto é mínimo em jogos e positivo em cargas específicas de IA.
+
+## Benchmarks em Jogos (1080p e 1440p)
+
+Em **jogos**, a AMD segue com vantagem leve na maioria dos títulos. Em 1080p, onde o processador é o gargalo principal:
+
+- **Cyberpunk 2077**: Ryzen 7 9700X entrega ~195 fps vs ~182 fps do Core Ultra 7 265K
+- **Counter-Strike 2**: AMD lidera por margem maior, ~580 fps vs ~520 fps
+- **Starfield**: praticamente empate, diferença de 3-5%
+- **Microsoft Flight Simulator**: Intel leva vantagem em ~8%, pois o título escala melhor com muitos núcleos E-cores
+
+Para jogos competitivos em alta taxa de quadros, o **Ryzen 7 9700X** é a escolha mais consistente. Para quem joga em 4K, a diferença entre as duas plataformas é praticamente irrelevante — a GPU é o gargalo dominante.
+
+## Produtividade e Workloads Profissionais
+
+Em tarefas de criação de conteúdo, renderização e compilação de código, o cenário muda:
+
+- **Renderização 3D (Blender)**: o Ryzen 9 9950X é ~18% mais rápido que o Core Ultra 9 285K
+- **Compilação de código (LLVM)**: AMD vence por ~12%
+- **Exportação de vídeo no Premiere**: Intel empata ou supera levemente graças ao Quick Sync integrado
+- **Compressão e descompressão de arquivos**: AMD domina com sua arquitetura de alta largura de banda
+
+Se o seu uso é majoritariamente **profissional e criativo**, o AMD Ryzen 9950X entrega mais por menos dinheiro.
+
+## Consumo de Energia e Temperatura
+
+Este é um ponto onde a AMD se destaca claramente em 2026. O **Ryzen 7 9700X** opera com TDP de apenas 65W — contra os 125W nominais do Core Ultra 7 265K em carga total. Na prática, o processador Intel pode consumir até 250W em modo sem limite de potência (PL2).
+
+Para sistemas compactos (Mini-ITX), builds silenciosas ou ambientes onde o consumo importa (servidores home), a AMD é a escolha natural. A Intel exige coolers mais robustos e fontes mais generosas.
+
+## Preço e Custo-Benefício em 2026
+
+| Processador | Preço médio (BR) | Melhor uso |
+|---|---|---|
+| Ryzen 5 9600X | R$ 1.200 | Gamers com orçamento limitado |
+| Core Ultra 5 245K | R$ 1.350 | Produtividade leve + jogos |
+| Ryzen 7 9700X | R$ 1.800 | Melhor custo-benefício geral |
+| Core Ultra 7 265K | R$ 2.100 | Workloads Intel-otimizados |
+| Ryzen 9 9950X | R$ 3.800 | Criadores de conteúdo |
+| Core Ultra 9 285K | R$ 4.200 | Multitarefa extrema |
+
+## Veredicto: Qual Escolher?
+
+Para a **maioria dos usuários** em 2026, o **AMD Ryzen 7 9700X** é a escolha mais inteligente: melhor desempenho em jogos, eficiência energética superior, plataforma AM5 com futuro garantido e preço competitivo.
+
+Para quem usa aplicativos fortemente dependentes de **codecs Intel** (como Quick Sync para streaming profissional) ou prefere o ecossistema da Intel, o **Core Ultra 7 265K** é uma escolha sólida e sem arrependimentos.
+
+A Intel ainda tem seu espaço, especialmente em laptops onde a eficiência energética do Arrow Lake U/H brilha. Mas no desktop, em 2026, a AMD deu um passo à frente que a Intel ainda não respondeu completamente.
+    `.trim(),
+  },
+  {
     slug: 'rtx-5090-vs-rx-9070-xt-2026',
     title: 'RTX 5090 vs RX 9070 XT: Qual Placa de Vídeo Vale Mais em 2026?',
     excerpt:
@@ -60,111 +145,4 @@ Mas com DLSS 4 e FSR 4 habilitados, a RX 9070 XT chega próxima: **Cyberpunk 207
 
 ## Para Quem é Cada Uma?
 
-A **RTX 5090** é para quem não aceita compromissos: streamers profissionais, editores de vídeo, entusiastas que querem o melhor absoluto e não olham para o preço.
-
-A **RX 9070 XT** é para o gamer que quer jogar tudo no ultra em 4K com excelente desempenho, sem gastar uma fortuna. Para a grande maioria dos jogadores, ela é a escolha mais inteligente de 2026.
-
-## Veredicto
-
-Se você tem orçamento ilimitado: **RTX 5090**. Se você quer o melhor custo-benefício de 2026: **RX 9070 XT** sem dúvida. Ela entrega 70% do desempenho da RTX 5090 por 30% do preço.
-    `.trim(),
-  },
-  {
-    slug: 'deepseek-vs-chatgpt-2026',
-    title: 'DeepSeek vs ChatGPT: Qual IA é Melhor em 2026?',
-    excerpt:
-      'Comparamos desempenho, preço e privacidade das duas IAs mais usadas do mundo. O DeepSeek é 100x mais barato, mas vale a troca? Veja os benchmarks reais.',
-    date: '06 de junho de 2026',
-    readTime: '7 min',
-    category: 'Inteligência Artificial',
-    content: `
-## O que é cada uma?
-
-O **ChatGPT** é desenvolvido pela OpenAI desde novembro de 2022. É a IA mais conhecida do mundo, com versões gratuitas e pagas, suporte a imagens, voz e integração com dezenas de ferramentas. O modelo mais avançado é o GPT-4o.
-
-O **DeepSeek** foi lançado em janeiro de 2025 por uma empresa chinesa chamada High-Flyer. Subiu rapidamente para o topo das lojas de aplicativos ao oferecer desempenho comparável ao ChatGPT, de forma gratuita e com código aberto.
-
-## Desempenho e Benchmarks
-
-Em **raciocínio e matemática**, o DeepSeek R1 se destaca: alcança **97,3% no benchmark MATH-500**, enquanto o GPT-4o marca 60,3% no mesmo teste. Para tarefas de lógica e problemas complexos passo a passo, o DeepSeek leva vantagem clara.
-
-Em **criatividade, redação e tarefas multimídia**, o ChatGPT ainda é superior. Ele entende imagens, gera conteúdo em múltiplos formatos e tem melhor desempenho em textos de marketing e storytelling.
-
-Para **programação**, os dois são excelentes — o DeepSeek V3 atinge 91% no SWE-Bench.
-
-## Preço: A Maior Diferença
-
-O DeepSeek vence com folga. O custo por milhão de tokens de saída é **US$ 0,28 no DeepSeek V3**, contra **US$ 30 no GPT-4o** — mais de 100 vezes mais barato.
-
-Para uso pessoal, o DeepSeek é completamente gratuito sem restrições de modelo. O ChatGPT oferece plano gratuito limitado e Plus por US$ 20/mês.
-
-O treinamento do DeepSeek R1 custou US$ 294 mil. O GPT-4 custou entre US$ 80 e 100 milhões — mais de 300 vezes mais caro.
-
-## Privacidade e Segurança
-
-Este é o ponto mais crítico. O **DeepSeek roteia dados dos usuários para servidores na China**, onde a Lei de Inteligência Nacional de 2017 obriga empresas a cooperar com o governo chinês quando solicitado. Pesquisadores de segurança também identificaram que o DeepSeek transmite dados para infraestrutura ligada à ByteDance.
-
-O **ChatGPT opera com servidores nos EUA e Europa**, sob regulações mais transparentes. Para dados sensíveis de empresas ou informações confidenciais, evite o DeepSeek.
-
-## Veredicto Final
-
-Não existe uma resposta única. O DeepSeek é extraordinariamente capaz para raciocínio e custa muito menos. O ChatGPT é mais versátil, mais integrado ao ecossistema de ferramentas e mais confiável em termos de privacidade.
-
-**Use o DeepSeek** para rascunhos, análises e código. **Use o ChatGPT** para conteúdo final, criativo e profissional. As duas IAs juntas cobrem praticamente qualquer necessidade.
-    `.trim(),
-  },
-  {
-    slug: 'melhores-ferramentas-ia-2026',
-    title: 'As 7 Melhores Ferramentas de IA para Produtividade em 2026',
-    excerpt:
-      'Do ChatGPT ao Notion AI, passando por Perplexity e Cursor: quais ferramentas de inteligência artificial realmente valem o investimento em 2026?',
-    date: '01 de junho de 2026',
-    readTime: '6 min',
-    category: 'Ferramentas',
-    content: `
-## Por que ferramentas de IA importam agora?
-
-O mercado de ferramentas de IA explodiu em 2025-2026. Com dezenas de opções disponíveis, escolher as certas pode economizar horas por semana. Neste artigo, listamos as 7 que realmente fazem diferença no dia a dia.
-
-## 1. ChatGPT (OpenAI)
-
-Ainda o mais versátil. Ideal para redação, análise de documentos, programação e criação de conteúdo. O plano Plus por US$ 20/mês dá acesso ao GPT-4o com capacidades multimodais.
-
-## 2. DeepSeek
-
-Gratuito e excepcionalmente bom em raciocínio matemático e programação. Perfeito como alternativa ao ChatGPT para tarefas técnicas.
-
-## 3. Perplexity AI
-
-O melhor para pesquisa. Combina busca na web em tempo real com respostas em linguagem natural. Substitui o Google para muitas consultas.
-
-## 4. Cursor
-
-Editor de código com IA integrada. Se você programa, o Cursor transforma sua produtividade. Completa, refatora e explica código com contexto completo do projeto.
-
-## 5. Notion AI
-
-Integrado ao Notion, ideal para quem já usa a ferramenta para notas e documentação. Resume, traduz e gera conteúdo dentro do seu workspace.
-
-## 6. Claude (Anthropic)
-
-Excepcional para análise de documentos longos e escrita mais nuançada. O plano gratuito já é muito capaz.
-
-## 7. Midjourney
-
-Para geração de imagens, ainda lidera em qualidade estética. Indispensável para criadores de conteúdo visual.
-
-## Conclusão
-
-Para uma rotina de produtividade, a combinação ideal é: **ChatGPT ou Claude** para texto, **DeepSeek** para código e análise, **Perplexity** para pesquisa, e **Cursor** para desenvolvimento.
-    `.trim(),
-  },
-]
-
-export function getPostBySlug(slug: string): Post | undefined {
-  return posts.find((p) => p.slug === slug)
-}
-
-export function getAllPosts(): Post[] {
-  return posts
-}
+A **RTX 5090** é p

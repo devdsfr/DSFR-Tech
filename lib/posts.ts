@@ -10,125 +10,123 @@ export type Post = {
 
 export const posts: Post[] = [
   {
-    slug: 'melhores-processadores-custo-beneficio-2026-06-07',
-    title: 'Melhores Processadores Custo-Benefício de 2026: Do R$800 ao R$3.000',
+    slug: 'claude-vs-gemini-vs-chatgpt-qual-usar-2026-06-07',
+    title: 'Claude vs Gemini vs ChatGPT: Qual IA Usar Para Cada Tarefa em 2026?',
     excerpt:
-      'Ryzen 5 9600X, Core Ultra 5 245K ou Ryzen 7 9700X? Analisamos os melhores processadores por faixa de preço em 2026 para gaming, trabalho e uso geral.',
-    date: '07 de junho de 2026',
-    readTime: '9 min',
-    category: 'Hardware',
-    content: `
-## Por que o processador ainda importa em 2026?
-
-Com GPUs cada vez mais poderosas assumindo o papel de gargalo principal em jogos, muitos perguntam se ainda vale investir em um CPU de ponta. A resposta é: depende — e muito mais do que você imagina.
-
-Em 2026, o processador continua sendo determinante para **jogos competitivos em alta taxa de quadros**, para **produtividade e multitarefa**, e para garantir que sua build tenha longevidade. Escolher um CPU fraco pode desperdiçar o potencial de uma GPU de R$ 4.000 ou tornar seu computador obsoleto antes do esperado.
-
-Neste guia, analisamos as melhores opções de processador por faixa de preço, com dados de desempenho reais e recomendações práticas para cada perfil de uso.
-
-## Faixa de entrada (até R$ 1.000): Ryzen 5 9600X domina
-
-Para quem monta um PC gamer sem abrir mão de desempenho real, o **AMD Ryzen 5 9600X** é, sem discussão, a melhor compra da faixa em 2026. Lançado com a arquitetura **Zen 5**, ele traz um salto de IPC de ~16% em relação ao predecessor Zen 4, com preços entre R$ 900 e R$ 1.100.
-
-**Especificações principais:**
-- 6 núcleos / 12 threads
-- Clock boost: até **5,4 GHz**
-- TDP: apenas **65W** — excelente para builds compactas
-- Plataforma: AM5 (suporte garantido até 2027+)
-
-Em jogos, o 9600X entrega resultados que impressionam para o preço:
-- *Counter-Strike 2* em 1080p: ~520 fps médios
-- *Cyberpunk 2077* Ultra 1080p: ~145 fps médios
-- *Fortnite* Competitivo: ~380 fps com configurações baixas
-
-A eficiência energética é outro ponto forte: com um cooler box ou um cooler de entrada, o 9600X opera com temperaturas excelentes sem exigir grandes investimentos em refrigeração.
-
-**Alternativa Intel:** o **Core i5-14600K** ainda circula no mercado abaixo de R$ 1.000, mas a plataforma LGA1700 (Alder/Raptor Lake) não tem perspectiva de futuro — a Intel já migrou para LGA1851 com o Arrow Lake. Para quem pensa em longevidade, o AM5 do Ryzen 5 9600X é claramente mais inteligente.
-
-## Faixa intermediária (R$ 1.000 a R$ 2.000): A guerra mais acirrada
-
-Nesta faixa, a concorrência é real. O **AMD Ryzen 7 9700X** e o **Intel Core Ultra 7 265K** disputam o mesmo público — com filosofias diferentes.
-
-### Ryzen 7 9700X — Eficiência e equilíbrio
-
-O **Ryzen 7 9700X** é o processador mais bem posicionado do mercado gamer em 2026. Com 8 núcleos / 16 threads e TDP de apenas **65W** (configurável para 105W no BIOS para mais desempenho), ele entrega:
-
-- Clock boost de até **5,5 GHz**
-- Desempenho de gaming superior ao i9-13900K da geração anterior
-- Preço médio: **R$ 1.600 a R$ 1.900**
-- Plataforma AM5 com suporte a DDR5 e PCIe 5.0
-
-Em benchmarks de jogos, o 9700X é consistentemente o processador mais rápido na faixa de preço: **3-7% superior** ao Core Ultra 7 265K em títulos competitivos como *CS2* e *Valorant*, onde cada frame importa.
-
-### Core Ultra 7 265K — Mais núcleos, mais multitarefa
-
-O **Core Ultra 7 265K** da Intel traz uma abordagem diferente: **20 núcleos** (8P + 12E) em arquitetura híbrida, com foco em multitarefa e workloads que escalam com muitos threads.
-
-- Preço médio: **R$ 1.900 a R$ 2.200**
-- Consumo: até **253W** em modo sem limite de potência — exige fonte boa e cooler robusto
-- Vantagem em: streaming enquanto joga, compilação de código, exportação de vídeo com Quick Sync
-
-Para quem usa o PC como workstation criativa além de gaming, o Core Ultra 7 265K faz sentido. Para puramente gaming, o Ryzen 7 9700X é mais eficiente e barato.
-
-## Faixa alta (R$ 2.000 a R$ 3.500): Ryzen 9 9900X ou Core Ultra 9 285K?
-
-Nesta faixa, entramos no território dos processadores que raramente são o gargalo em qualquer cenário.
-
-### Ryzen 9 9900X — O ponto de inflexão AMD
-
-Com **12 núcleos / 24 threads** e clock de até **5,6 GHz**, o **Ryzen 9 9900X** é a escolha ideal para quem trabalha com **renderização 3D, Machine Learning local e edição de vídeo** sem querer pagar pelo flagship 9950X.
-
-- Preço médio: **R$ 2.400 a R$ 2.800**
-- Em Blender, é ~22% mais rápido que o Ryzen 7 9700X
-- Consumo de **120W** TDP — gerenciável com cooler de 240mm
-
-Para gaming puro, a diferença em relação ao 9700X é mínima (2-4%). O investimento extra se justifica apenas se sua carga de trabalho é claramente multithreaded.
-
-### Core Ultra 9 285K — O gigante da Intel
-
-O **Core Ultra 9 285K** traz **24 núcleos** (8P + 16E) e é a opção Intel para quem precisa de máxima capacidade de processamento paralelo.
-
-- Preço médio: **R$ 3.000 a R$ 3.500**
-- Melhor que qualquer CPU AMD em workloads altamente paralelizados com otimização para núcleos E (como algumas cargas de servidor e virtualização)
-- Consumo elevado: pode ultrapassar **280W** em carga total
-
-Para a maioria dos usuários, o 285K é excessivo. Mas para desenvolvedores que compilam projetos enormes, virtualizam múltiplas máquinas simultâneas ou trabalham com simulações físicas, ele justifica o preço.
-
-## Tabela comparativa: Qual processador comprar em 2026?
-
-| Processador | Núcleos | Boost | TDP | Preço BR | Ideal para |
-|---|---|---|---|---|---|
-| Ryzen 5 9600X | 6C/12T | 5,4 GHz | 65W | R$ 950 | Gaming entrada |
-| Core Ultra 5 245K | 14C/14T | 5,2 GHz | 125W | R$ 1.200 | Multi-uso básico |
-| Ryzen 7 9700X | 8C/16T | 5,5 GHz | 65W | R$ 1.750 | Melhor custo-benefício |
-| Core Ultra 7 265K | 20C/20T | 5,5 GHz | 125W | R$ 2.100 | Multitarefa intensa |
-| Ryzen 9 9900X | 12C/24T | 5,6 GHz | 120W | R$ 2.600 | Criadores de conteúdo |
-| Core Ultra 9 285K | 24C/24T | 5,7 GHz | 125W | R$ 3.200 | Workloads extremos |
-
-## O que considerar além do desempenho bruto
-
-**Plataforma e longevidade:** A AMD garante suporte ao socket AM5 até pelo menos 2027. A Intel já trocou de socket com o Arrow Lake (LGA1851), mas o histórico de trocas frequentes ainda gera desconfiança. Se você planeja fazer um upgrade de CPU daqui a 2 anos sem trocar a placa-mãe, o AM5 é mais seguro.
-
-**Memória RAM:** Toda a linha Ryzen 9000 e Core Ultra 200 suporta DDR5 nativamente. Ainda é possível usar DDR4 em algumas placas Intel, mas DDR5 já tem preços acessíveis e é o padrão para builds novas. Não economize aqui — **32 GB de DDR5-6000** é o ponto ideal para 2026.
-
-**Refrigeração:** O Ryzen 5 e 7 com TDP de 65W aceitam coolers de médio porte sem problemas. Os processadores Intel com consumo desbloqueado exigem investimento em refrigeração — um bom cooler de 240mm ou superior.
-
-## Conclusão: Qual processador comprar?
-
-Para **gaming puro** em qualquer faixa: escolha AMD. O **Ryzen 5 9600X** para entradas até R$ 1.000 e o **Ryzen 7 9700X** para quem pode investir mais — ambos oferecem eficiência energética superior e desempenho de gaming líder.
-
-Para **produtividade intensa e multitarefa**: o **Core Ultra 7 265K** ou **Core Ultra 9 285K** ganham quando o uso vai além dos jogos, especialmente com Quick Sync para streaming e workloads de compilação.
-
-O mercado de CPUs em 2026 nunca foi tão favorável ao consumidor. A AMD conquistou a liderança em eficiência, a Intel responde com mais núcleos e recursos especializados. Seja qual for sua escolha, qualquer processador dessa lista vai durar anos sem mostrar limitação real.
-    `.trim(),
-  },
-  {
-    slug: 'melhores-ssds-para-ps5-2026-06-07',
-    title: 'Melhores SSDs para PS5 em 2026: Expanda Seu Armazenamento Sem Errar na Escolha',
-    excerpt:
-      'O PS5 aceita SSDs M.2 NVMe com velocidades a partir de 5.500 MB/s, mas qual comprar? Analisamos as melhores opções do mercado por preço, desempenho e compatibilidade.',
+      'Com tantos modelos de IA disponíveis, saber qual usar para cada situação faz toda a diferença. Comparamos Claude, Gemini e ChatGPT em escrita, código, análise e pesquisa.',
     date: '07 de junho de 2026',
     readTime: '8 min',
-    category: 'Console & Gaming',
+    category: 'Inteligência Artificial',
     content: `
-## Por que expandir o armazenamento d
+## Por que a escolha do modelo importa?
+
+Em 2026, já não basta saber "usar IA" — é preciso saber **qual IA usar e quando**. Claude, Gemini e ChatGPT são os três modelos generalistas mais relevantes do mercado, cada um com pontos fortes, limitações e casos de uso distintos. Usar o modelo errado para uma tarefa pode significar resultados medíocres onde o modelo certo entregaria algo excelente.
+
+Este artigo compara as três plataformas em quatro dimensões práticas: **escrita e criatividade**, **programação**, **análise de documentos** e **pesquisa com acesso à web** — para que você monte um fluxo de trabalho inteligente em vez de depender cegamente de uma única ferramenta.
+
+## Claude (Anthropic) — O especialista em contexto e nuance
+
+O **Claude**, desenvolvido pela Anthropic, consolidou em 2026 sua reputação como o modelo mais capaz para lidar com documentos longos, raciocínio detalhado e escrita que exige nuance.
+
+**Onde o Claude se destaca:**
+
+A janela de contexto de **200 mil tokens** (equivalente a um livro de 600 páginas) é o diferencial mais prático. Você pode colar contratos completos, relatórios financeiros extensos ou bases de código inteiras e pedir análises que levam em conta o documento inteiro — sem perder informação no meio do caminho.
+
+Em escrita, o Claude produz textos com **voz mais natural e menos robótica**. É a escolha preferida de escritores, redatores e profissionais que precisam de conteúdo que soe humano.
+
+**Benchmarks relevantes (2026):**
+- MMLU: 91,8% — liderança em raciocínio multidisciplinar
+- HumanEval (código): 92% com o modelo Sonnet
+- Análise de documentos longos: melhor desempenho entre os três em testes de compreensão de textos acima de 50 mil tokens
+
+**Planos disponíveis:**
+- Gratuito: acesso ao Claude com limites diários
+- Pro: **US$ 20/mês** — sem limites, acesso aos modelos mais avançados
+- Team e Enterprise: para organizações com necessidades de privacidade e volume
+
+**Limitação principal:** o Claude não tem acesso à internet em tempo real no plano gratuito — depende de integração ou de você colar o conteúdo diretamente.
+
+## Gemini (Google) — A IA conectada ao ecossistema Google
+
+O **Gemini**, especialmente na versão **2.5 Pro**, é o modelo mais integrado ao ecossistema produtivo. Para quem trabalha com Google Workspace (Docs, Sheets, Gmail, Drive), o Gemini tem uma vantagem estrutural que nenhum concorrente consegue replicar facilmente.
+
+**Onde o Gemini se destaca:**
+
+A integração nativa com o **Google Search** transforma o Gemini em uma ferramenta de pesquisa excepcional. Diferente dos concorrentes que simulam buscas, o Gemini acessa o índice do Google em tempo real, com cobertura de notícias, preços, dados de mercado e informações atualizadas por padrão.
+
+O **Gemini 2.5 Pro** também lidera em benchmarks de raciocínio matemático e científico:
+- MATH benchmark: **96,7%** — o melhor entre os três modelos analisados
+- Raciocínio científico (GPQA): 86,4%
+- Geração de código para tarefas de engenharia: desempenho top-3 global
+
+Outro diferencial: **multimodalidade nativa**. O Gemini processa texto, imagens, áudio, vídeo e código na mesma janela de conversa — sem necessidade de ferramentas externas.
+
+**Planos disponíveis:**
+- Gratuito: acesso ao Gemini 1.5 com limites generosos
+- Advanced (Google One AI Premium): **R$ 100/mês** — Gemini 2.5 Pro, integração com Workspace
+- API para desenvolvedores: com free tier generoso
+
+**Limitação principal:** nas tarefas de escrita criativa e análise de documentos de texto puro, o Gemini ainda fica levemente atrás do Claude em naturalidade e coerência de longa duração.
+
+## ChatGPT (OpenAI) — O mais versátil e com o maior ecossistema
+
+O **ChatGPT**, com o modelo **GPT-4o**, continua sendo a plataforma com o maior ecossistema de integrações e a mais reconhecida pelo mercado. Sua força não está necessariamente no benchmark mais alto em qualquer categoria específica — está na **amplitude de funcionalidades** e no ecossistema de plugins e APIs.
+
+**Onde o ChatGPT se destaca:**
+
+A loja de **GPTs personalizados** permite configurar assistentes especializados para tarefas recorrentes — um GPT para revisar contratos em linguagem jurídica específica, outro para analisar dados financeiros no seu formato padrão. Essa personalização é mais acessível ao usuário não técnico do que qualquer alternativa.
+
+O **modo de voz avançado** do ChatGPT Plus ainda lidera em naturalidade de conversa falada — útil para quem usa IA em reuniões ou para transcrições em tempo real.
+
+Em **geração de imagens**, a integração com o DALL·E 3 dentro da mesma interface torna o ChatGPT a ferramenta mais fluida para criadores de conteúdo que precisam de texto + imagem no mesmo fluxo.
+
+**Benchmarks relevantes:**
+- HumanEval (código): 90,2% com GPT-4o
+- Escrita multiformat: desempenho sólido em todos os estilos
+- Velocidade de resposta: das mais rápidas entre os modelos premium
+
+**Planos disponíveis:**
+- Gratuito: GPT-4o com limite de mensagens diárias
+- Plus: **US$ 20/mês** — sem limites, acesso a todos os recursos
+- Team e Enterprise: controle de dados e privacidade avançados
+
+**Limitação principal:** o GPT-4o sem plugins não acessa a web por padrão — é necessário ativar a busca ou usar o modo "Browse". A janela de contexto é menor que a do Claude.
+
+## Comparativo direto por caso de uso
+
+| Tarefa | Melhor escolha | Por quê |
+|---|---|---|
+| Escrita criativa e editorial | **Claude** | Texto mais natural, melhor coerência longa |
+| Análise de documentos extensos | **Claude** | Contexto de 200k tokens, melhor compreensão |
+| Pesquisa e informações atuais | **Gemini** | Integração nativa com Google Search |
+| Matemática e ciências | **Gemini 2.5 Pro** | Melhor benchmark MATH e GPQA |
+| Programação (geral) | **Claude ou ChatGPT** | Empate técnico; Claude melhor em refatoração |
+| Geração de imagem + texto | **ChatGPT** | DALL·E 3 integrado nativamente |
+| Integração com Google Workspace | **Gemini** | Nativo no Docs, Gmail, Sheets |
+| GPTs e automações personalizadas | **ChatGPT** | GPT Store e Actions |
+| Uso sem custo com alta capacidade | **Claude (gratuito)** | Limite diário generoso, modelo avançado |
+
+## Como montar um fluxo de trabalho com os três
+
+A estratégia mais inteligente em 2026 não é escolher uma IA e ignorar as outras — é usar cada uma no que ela faz melhor.
+
+**Para um profissional de conteúdo:**
+- Pesquisa inicial e atualização de dados → **Gemini** (busca em tempo real)
+- Rascunho e refinamento do texto → **Claude** (escrita mais natural)
+- Geração de imagens e thumbnails → **ChatGPT** (DALL·E integrado)
+
+**Para um desenvolvedor:**
+- Refatoração e análise de código → **Claude** (contexto longo + precisão)
+- Busca de soluções e documentação → **Gemini** (acesso à web)
+- Prototipagem rápida → **ChatGPT** (velocidade e GPTs especializados)
+
+**Para um analista de negócios:**
+- Análise de relatórios longos → **Claude** (lida com PDFs extensos)
+- Dados de mercado e tendências recentes → **Gemini** (pesquisa integrada)
+- Apresentações e automações → **ChatGPT** (ecossistema de plugins)
+
+## Conclusão: não existe o melhor, existe o mais adequado
+
+Em 2026, qualquer pessoa que usa apenas um modelo de IA está deixando produtividade na mesa. O **Claude** lidera em análise profunda e escrita. O **Gemini** domina em pesquisa conectada e raciocínio científico. O **ChatGPT** vence em ecossistema, versatilidade e geração multimodal.
+
+O plano gratuito dos três já entrega valor real — e o inv

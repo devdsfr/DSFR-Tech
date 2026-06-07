@@ -10,6 +10,66 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: 'rtx-5090-vs-rx-9070-xt-2026',
+    title: 'RTX 5090 vs RX 9070 XT: Qual Placa de Vídeo Vale Mais em 2026?',
+    excerpt:
+      'NVIDIA lançou a RTX 5090 com arquitetura Blackwell enquanto a AMD surpreende com a RX 9070 XT por metade do preço. Veja benchmarks reais e qual comprar.',
+    date: '07 de junho de 2026',
+    readTime: '8 min',
+    category: 'Hardware',
+    content: `
+## O cenário das GPUs em 2026
+
+O mercado de placas de vídeo nunca esteve tão competitivo. A NVIDIA lançou a série RTX 5000 com a arquitetura Blackwell, prometendo até 2x mais desempenho que a geração anterior. Já a AMD contra-atacou com a RX 9070 XT oferecendo desempenho flagship por um preço bem mais acessível. Mas qual vale mais o seu dinheiro?
+
+## RTX 5090 — O Monstro da NVIDIA
+
+A **RTX 5090** é a GPU mais poderosa já lançada para o mercado consumidor. Com **32 GB de memória GDDR7**, núcleo GB202 com 21.760 CUDA cores e barramento de 512 bits, ela domina qualquer benchmark.
+
+**Pontos fortes:**
+- Melhor desempenho absoluto em ray tracing
+- DLSS 4 com Multi Frame Generation (gera múltiplos frames por frame real)
+- Ideal para criação de conteúdo: renderização 3D, edição de vídeo 8K
+- Suporte a 4 monitores simultâneos
+
+**Pontos fracos:**
+- Preço: R$ 15.000 a R$ 18.000 no Brasil
+- Consumo de 575W — exige fonte de 1000W+
+- Enorme: ocupa 3 slots e exige gabinete extra grande
+
+## RX 9070 XT — A Surpresa da AMD
+
+A **RX 9070 XT** chegou com a arquitetura RDNA 4 e surpreendeu o mercado. Com **16 GB de memória GDDR6**, ela entrega desempenho que rivaliza com a RTX 4090 da geração anterior.
+
+**Pontos fortes:**
+- Preço: R$ 4.500 a R$ 5.500 no Brasil
+- Desempenho excelente em rasterização (jogos tradicionais)
+- Consumo de apenas 304W
+- Driver muito melhorado com FSR 4
+
+**Pontos fracos:**
+- Ray tracing ainda inferior à NVIDIA
+- Sem equivalente ao DLSS Multi Frame Generation
+- Menos suporte em softwares de criação de conteúdo
+
+## Benchmarks: Jogos em 4K
+
+Em resolução 4K sem upscaling, a RTX 5090 domina: **Cyberpunk 2077** roda a 180 fps na 5090 contra 110 fps na RX 9070 XT. Em **Alan Wake 2** com ray tracing total, a diferença é ainda maior: 140 fps vs 65 fps.
+
+Mas com DLSS 4 e FSR 4 habilitados, a RX 9070 XT chega próxima: **Cyberpunk 2077** com FSR 4 Quality: 145 fps vs 210 fps com DLSS 4 Performance. Uma diferença ainda grande, mas justifica quase R$ 12.000 a mais?
+
+## Para Quem é Cada Uma?
+
+A **RTX 5090** é para quem não aceita compromissos: streamers profissionais, editores de vídeo, entusiastas que querem o melhor absoluto e não olham para o preço.
+
+A **RX 9070 XT** é para o gamer que quer jogar tudo no ultra em 4K com excelente desempenho, sem gastar uma fortuna. Para a grande maioria dos jogadores, ela é a escolha mais inteligente de 2026.
+
+## Veredicto
+
+Se você tem orçamento ilimitado: **RTX 5090**. Se você quer o melhor custo-benefício de 2026: **RX 9070 XT** sem dúvida. Ela entrega 70% do desempenho da RTX 5090 por 30% do preço.
+    `.trim(),
+  },
+  {
     slug: 'deepseek-vs-chatgpt-2026',
     title: 'DeepSeek vs ChatGPT: Qual IA é Melhor em 2026?',
     excerpt:

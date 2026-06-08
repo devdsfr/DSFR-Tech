@@ -897,4 +897,6 @@ export function getPostBySlug(slug: string): Post | undefined {
   return posts.find((p) => p.slug === slug)
 }
 
-export function getAllPosts(): Pos
+export function getAllPosts(): Post[] {
+  return [...posts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+}

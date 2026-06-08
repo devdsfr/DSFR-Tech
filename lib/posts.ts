@@ -735,7 +735,7 @@ A qualidade AV1 do AMF RDNA 4 e apenas 5-8% inferior ao NVENC. Consumo de **304W
 
 **Twitch** tem limite de 8 Mbps — AV1 menos relevante ali. **YouTube** aceita ate 51 Mbps e ja suporta AV1. **32 GB de RAM** e o minimo recomendado para streaming simultaneo. Em 2026, qualquer RTX 5000 ou RX 9000 com AV1 oferece uma experiencia de streaming muito superior ao que era possivel ha dois anos.
     `.trim(),
-  }
+  },
   {
     slug: 'melhores-ssds-para-ps5-2026-06-07',
     title: 'Melhores SSDs para PS5 em 2026: Expanda Seu Armazenamento Sem Errar na Escolha',

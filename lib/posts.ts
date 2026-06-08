@@ -6,6 +6,7 @@ export type Post = {
   readTime: string
   category: string
   content: string
+  coverImage?: string
 }
 
 export const posts: Post[] = [
@@ -896,6 +897,4 @@ export function getPostBySlug(slug: string): Post | undefined {
   return posts.find((p) => p.slug === slug)
 }
 
-export function getAllPosts(): Post[] {
-  return posts
-}
+export function getAllPosts(): Pos

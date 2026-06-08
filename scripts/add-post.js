@@ -18,6 +18,7 @@ for (const field of required) {
 }
 
 // Gera o bloco TypeScript do novo post
+const coverImageLine = post.coverImage ? `\n    coverImage: ${JSON.stringify(post.coverImage)},` : ''
 const postBlock = `  {
     slug: ${JSON.stringify(post.slug)},
     title: ${JSON.stringify(post.title)},
@@ -25,7 +26,7 @@ const postBlock = `  {
       ${JSON.stringify(post.excerpt)},
     date: ${JSON.stringify(post.date)},
     readTime: ${JSON.stringify(post.readTime)},
-    category: ${JSON.stringify(post.category)},
+    category: ${JSON.stringify(post.category)},${coverImageLine}
     content: \`
 ${post.content}
     \`.trim(),
@@ -51,6 +52,4 @@ if (insertPos === marker.length - 1) {
 content = content.slice(0, insertPos) + '\n' + postBlock + '\n' + content.slice(insertPos)
 
 // Escreve o arquivo completo
-fs.writeFileSync(postsPath, content, 'utf8')
-console.log(`✓ Post inserido: ${post.slug}`)
-console.log(`✓ Arquivo: ${postsPath} (${content.length} chars)`)
+fs.writeFileSync(postsPath, content, 'ut

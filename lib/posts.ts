@@ -18,6 +18,7 @@ export const posts: Post[] = [
     date: "08 de junho de 2026",
     readTime: "10 min",
     category: "Hardware",
+    coverImage: "https://images.unsplash.com/photo-1591799264318-7e6ef8dbc7c7?w=1200&h=600&fit=crop&auto=format",
     content: `
 ## A GPU mais esperada da linha RTX 5000 finalmente chegou
 
